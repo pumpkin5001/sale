@@ -1,0 +1,74 @@
+:root {
+  --scale: 1;
+  --bgColor: rgb(160, 153, 137);
+  --border4: 4px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: block;
+  background: var(--bgColor);
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.canvases {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: scale(var(--scale));
+          transform: scale(var(--scale));
+  margin-top: -10px;
+  margin-bottom: -10px;
+  height: auto;
+}
+
+.canvases #canvas1,
+.canvases #canvas2 {
+  display: block;
+  -webkit-transform: scale(var(--scale));
+          transform: scale(var(--scale));
+  padding: 0;
+  margin: 0;
+}
+
+.canvases #canvas1 {
+  display: block;
+  position: relative;
+}
+
+.canvases #canvas2 {
+  background: none;
+  position: absolute;
+  border: var(--border4) solid blue;
+  background: bisque;
+}
+
+#stars_sprite {
+  display: none;
+}
+
+.text {
+  padding: 0 20%;
+}
+
+p {
+  color: rgba(65, 45, 45, 0.688);
+  text-indent: 2rem;
+  font-style: italic;
+}
+
+p a {
+  color: rgba(60, 100, 34, 0.8);
+}
+/*# sourceMappingURL=style.css.map */

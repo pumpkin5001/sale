@@ -1,0 +1,81 @@
+:root {
+    --scale: 1;
+    --bgColor: rgb(160, 153, 137);
+    --border4: 4px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    display: block;
+    background: var(--bgColor); // 
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.canvases {
+
+    // position: relative;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    // border: var(--border4) solid blue;
+    transform: scale(var(--scale));
+    // padding: 1px 0;
+
+    margin-top: -10px;
+    margin-bottom: -10px;
+    height: auto;
+
+    #canvas1,
+    #canvas2 {
+        display: block;
+        transform: scale(var(--scale));
+        padding: 0;
+        margin: 0;
+
+    }
+
+    #canvas1 {
+        display: block;
+        // border: calc(var(--border4)*1) solid rgba(29, 27, 13, 0.459);
+        position: relative;
+
+    }
+
+    #canvas2 {
+        background: none;
+        position: absolute;
+        border: var(--border4) solid blue;
+        background: bisque;
+
+        // filter: blur(16px) contrast(16);
+    }
+
+}
+
+#stars_sprite {
+    display: none;
+}
+
+.text {
+    padding: 0 20%
+}
+
+
+
+p {
+    color: rgba(65, 45, 45, 0.688);
+    text-indent: 2rem;
+    font-style: italic;
+
+    a {
+        color: rgba(60, 100, 34, 0.8);
+        //color: rgb(32, 104, 15);
+    }
+}
